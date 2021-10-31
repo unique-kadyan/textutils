@@ -5,6 +5,7 @@ import TextForm from './components/TextForm';
 import React, { useState } from 'react';
 import Alert from './components/Alert';
 
+
 import {
   BrowserRouter as Router,
   Switch,
@@ -47,7 +48,6 @@ function App() {
   }
   
   return (
-
    <>
 
   <Router>
@@ -57,8 +57,8 @@ function App() {
     <Route exact path="/about">
       <About Mode={drkMode} />
     </Route>
-    <Route exact path="/">  <TextForm showAlert = {showAlert} Mode={drkMode}/></Route>
-    <Route exact path="/contactus"><ContactUS Mode={drkMode} /> </Route>
+    <Route  path="/">  <TextForm showAlert = {showAlert} Mode={drkMode}/></Route>
+    <Route  path="/contactus"><ContactUS Mode={drkMode} /> </Route>
   </Switch>
   </Router>
    </>
